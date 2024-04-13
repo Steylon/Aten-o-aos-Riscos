@@ -6,10 +6,10 @@
 
 label start:
     #narrador 01
-    voice "narrador/narrador 01.ogg"
+    voice "narrador/narrador 01.mov"
     "Pedro, o porteiro do turno da manhã, estava em mais um dia tranquilo quando um rapaz toca o interfone da portaria" with dissolve
 
-    voice "pedro/pedro dialogo 01.ogg"
+    voice "pedro/pedro dialogo 01.mov"
     porteiro "Portaria do condomínio CondEduc, em que posso ajudar?" with dissolve
 
     voice "rodolfo/rodolfo dialogo 01.ogg"
@@ -24,7 +24,7 @@ label escolha_primeiro:
         "Liberar a entrada":
 
             #narrador 02
-            voice "narrador/narrador 02.ogg"
+            voice "narrador/narrador 02.mov"
             "Oh não, você liberou a entrada de um estranho sem se certificar antes, 
             ele invadiu um apartamento e roubou várias coisas de um morador!"
 
@@ -33,20 +33,20 @@ label escolha_primeiro:
             jump escolha_primeiro
 
         "Interfonar para o apartamento 402.":
-            voice "narrador/narrador 03.ogg"
+            voice "narrador/narrador 03.mov"
             "É isso aí! Sempre devemos interfonar antes para ter certeza se o visitante não é alguém mal intencionado!"
 
         # a frase abauxo irá aparecer na tela enquanto o menu estiver ativo
 
         "O que Pedro deve fazer?"
 
-    voice "pedro/pedro dialogo 02.ogg"
+    voice "pedro/pedro dialogo 02.mov"
     porteiro "Só um segundo, vou interfonar para ela." with dissolve
 
-    voice "narrador/narrador 04.ogg"
+    voice "narrador/narrador 04.mov"
     "Pedro interfona para o apartamento 402 mas ninguém atende." with dissolve
 
-    voice "pedro/pedro dialogo 03.ogg"
+    voice "pedro/pedro dialogo 03.mov"
     porteiro "Sinto muito, senhor, ninguém atendeu. Não posso liberar sua entrada." with dissolve
 
     voice "rodolfo/rodolfo dialogo 02.ogg"
@@ -58,36 +58,36 @@ label segundo_escolha:
 
     menu: 
         "Interfonar novamente.":
-            voice "narrador/narrador 05.ogg"
+            voice "narrador/narrador 05.mov"
             "Parabéns! Interfonando novamente você pode assegurar se o morador conhece o visitante evitando assaltos e vandalismo!" with dissolve
         
         "Deixar ele entrar.":
-            voice "narrador/narrador 06.ogg"
+            voice "narrador/narrador 06.mov"
             "Você liberou acesso sem permissão do morador, o visitante acabou vandalizando vários lugares do condomínio." with dissolve
         
         # retorna ao menu segundo_minijogo:
 
             jump segundo_escolha
-    voice "pedro/pedro dialogo 04.ogg"
+    voice "pedro/pedro dialogo 04.mov"
     porteiro "Na verdade, eu trabalho aqui já tem 1 ano, senhor. Mas posso interfonar novamente." with dissolve
 
-    voice "narrador/narrador 07.ogg"
+    voice "narrador/narrador 07.mov"
     "Pedro tenta pela segunda vez, e novamente ninguém atende."
 
-    voice "pedro/pedro dialogo 05.ogg"
+    voice "pedro/pedro dialogo 05.mov"
     porteiro "Infelizmente ninguém atendeu, não posso autorizar sua entrada no prédio." with dissolve
 
     voice "rodolfo/rodolfo dialogo 03.ogg"
     ladrao "Isso é um absurdo! Eu vou reclamar com o síndico, pode esperar! "
 
     # voice "narrador/narrador 07.ogg"
-    voice "narrador/narrador 08.ogg"
+    voice "narrador/narrador 08.mov"
     "O homem foi embora e mais tarde, naquele mesmo dia, ele soube pelo seu amigo porteiro de outro condomínio." with dissolve
  
-    voice "narrador/narrador 09.ogg"
+    voice "narrador/narrador 09.mov"
     "Que esse rapaz entrou no condomínio e acabou roubando algumas coisas dos moradores." with dissolve
 
-    voice "narrador/narrador 10.ogg"
+    voice "narrador/narrador 10.mov"
     "Pedro ficou com a consciência limpa após tudo isso." with dissolve
     # fim de jogo!  
     return
